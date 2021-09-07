@@ -30,4 +30,4 @@ Jquery is need to be included.
 
 The context menu is opened when key "/" is pressed.
 
-The context menu is created from a <<ul>> list element.
+The context menu is created from a &lt;ul&gt; list element.
