@@ -222,7 +222,7 @@ function select_item($items, n) {
       n_shown++;
    }
 }
-function set_start_node(sel_first, sel_menu, onselect) {
+function set_context_menu(sel_first, sel_menu, onselect) {
    /* Define el bloque en donde se implementará el menú contextual. 
    Parámetros:
       -sel_first -> Selector Jquery del elemento editable en donde se implementará

@@ -1,2 +1,4 @@
 # jcontext_menu
-Javascript code to implement a context menu in a editable element.
+Javascript code to implement a context menu in a HTML editable element.
+
+
