@@ -3,6 +3,8 @@ Javascript code to implement a context menu in a HTML editable element.
 
 Jquery is need to be included.
 
+The context menu is opened when key "/" is pressed.
+
 ![sample page](https://github.com/t-edson/jcontext_menu/blob/main/screen1.png?raw=true)
 
 Sample code:
