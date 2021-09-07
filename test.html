@@ -1,0 +1,35 @@
+<!DOCTYPE HTML><HTML>
+<HEAD>
+   <meta charset="UTF-8">
+   <TITLE>Jedtext</TITLE> <!--meta http-equiv="refresh" content="2" -->
+   <link rel="stylesheet" href="style.css">
+</HEAD> 
+<BODY>
+   <h2>Jedcontent </h2>
+   <div>
+      <button id="opdo" onmousedown="event.preventDefault();" onclick="new o_opdo($main_ex, true)" >Párrafo</button>
+      <button id="pow"  onmousedown="event.preventDefault();" onclick="new o_pow()">Título</button>
+      <button id="sub"  onmousedown="event.preventDefault();" onclick="new o_pow('',true)">Imagen</button>
+   </div>
+   <br>
+   <!--Menú de bloques-->
+   <div class="ctxmenu">
+      <ul>
+         <li>Bloque párrafo</li>
+         <li>Bloque Título</li>
+         <li>Bloque Imagen</li>
+         <li>Bloque fórmula</li>
+      </ul>
+   </div>
+   <!--Primer contenedor para inicio de edición-->
+   <p id="first" class="block text" contenteditable="true" ></p>
+
+   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+   <script src="jedcontent.js"></script>
+   <script>
+      set_start_node('#first', '.ctxmenu', function(item_sel) {
+         alert(item_sel);
+      });
+   </script>
+</BODY>
+</HTML>

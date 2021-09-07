@@ -1,0 +1,43 @@
+/*p {
+    border: 1px solid red
+}*/
+.ctxmenu {
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    box-shadow: 0 0 7px 1px gray;
+}
+.ctxmenu ul {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 0px;
+    font-size: 0.9rem;
+    color: #555;
+}
+.ctxmenu li {
+    list-style: none;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+.ctxmenu .act {
+    background-color: #888;
+    color: #fff;
+}
+.block {
+    /*border: none;*/
+    /*display: block;*/
+    padding-left: 1px;  /*To make caret appears in Chrome*/
+}
+
+/*.text:empty:not(:focus)::before {
+    content: "Escribir texto aquí. Pulse '/' para más opciones.";
+    color: #aaa;
+    font-style: italic;
+  }
+*/
+/*Implementa el "placeholder" en los elementos .text*/
+.text:empty:not(:focus):before,.text:empty:before {
+    content: "Escribir texto aquí. Pulse '/' para más opciones.";
+    color: #aaa;
+    font-style: italic;
+}
